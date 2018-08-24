@@ -11,7 +11,7 @@ POST https://irmandade.herokuapp.com/mutants
 ## /stats
 GET https://irmandade.herokuapp.com/stats
 >Revela da quantidade de DNA´s humanos testados em quantos ocorram mutação.
-
-
-
+ 
+ 
+ 
 Para fornecer mais detalhes sobre a API, um mutant com poderes de desenvolvedor disponibilizou uma documentação mais completa utilizando swagger que pode ser acessada através da url: https://irmandade.herokuapp.com/swagger-ui.html
