@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.irmandade.mutants.HumanoRepository;
+import com.irmandade.mutants.services.HumanoService;
 import com.irmandade.mutants.models.Humano;
 import com.irmandade.mutants.models.Stats;
 
@@ -15,7 +15,7 @@ import com.irmandade.mutants.models.Stats;
 public class StatsService {
 	
 	@Autowired
-	private HumanoRepository humanoService;
+	private HumanoService humanoService;
 	
 	public Stats getStatus() {
 		List<Humano> humanos = humanoService.findAll();
