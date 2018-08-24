@@ -1,4 +1,4 @@
-package com.irmandade.mutants;
+package com.irmandade.mutants.controllers.services;
 
 import static org.junit.Assert.assertEquals;
 
