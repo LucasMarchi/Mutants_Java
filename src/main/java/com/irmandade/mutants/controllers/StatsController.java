@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.irmandade.mutants.repositories.HumanoRepository;
 import com.irmandade.mutants.services.StatsService;
 
 import io.swagger.annotations.ApiResponse;
@@ -20,9 +19,6 @@ public class StatsController {
 	
 	@Autowired
 	private StatsService statusService;
-	
-	@Autowired
-	HumanoRepository humanoRepository;
 	
 	@GetMapping
 	@Cacheable("stats")
