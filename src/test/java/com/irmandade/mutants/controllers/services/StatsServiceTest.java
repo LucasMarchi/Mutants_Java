@@ -13,7 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.irmandade.mutants.HumanoRepository;
+import com.irmandade.mutants.services.HumanoService;
 import com.irmandade.mutants.models.Humano;
 import com.irmandade.mutants.models.Stats;
 import com.irmandade.mutants.services.StatsService;
@@ -25,7 +25,7 @@ public class StatsServiceTest {
 	StatsService statsService;
 	
 	@Mock
-	HumanoRepository humanoRepository;
+	HumanoService humanoService;
 
 	@Test
 	public void deveRetornarStatus() {
@@ -38,7 +38,7 @@ public class StatsServiceTest {
 		listaHumanos.add(new Humano(true, null));
 		listaHumanos.add(new Humano(false, null));
 		
-		when(humanoRepository.findAll()).thenReturn(listaHumanos);
+		when(humanoService.findAll()).thenReturn(listaHumanos);
 		Stats stats = statsService.getStatus();
 		
 		assertEquals(count_mutant_dna_esperado, stats.getCount_mutant_dna());
