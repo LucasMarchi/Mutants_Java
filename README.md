@@ -14,4 +14,6 @@ GET https://irmandade.herokuapp.com/stats
  
  
  
+ -----------------------------------------------------------------------------------------------------------------------------------------
+ 
 Para fornecer mais detalhes sobre a API, um mutant com poderes de desenvolvedor disponibilizou uma documentação mais completa utilizando swagger que pode ser acessada através da url: https://irmandade.herokuapp.com/swagger-ui.html
