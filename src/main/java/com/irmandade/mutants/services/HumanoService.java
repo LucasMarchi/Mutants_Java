@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.irmandade.mutants.HumanoRepository;
+import com.irmandade.mutants.repositories.HumanoRepository;
 import com.irmandade.mutants.models.Humano;
 
 @Service
