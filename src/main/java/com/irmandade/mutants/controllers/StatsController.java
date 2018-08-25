@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiResponses;
 public class StatsController {
 	
 	@Autowired
-	private StatsService statusService;
+	private StatsService statsService;
 	
 	@GetMapping
 	@Cacheable("stats")
@@ -28,7 +28,7 @@ public class StatsController {
 	})
 	public ResponseEntity<?> getStatus() {
 		try {
-			return ResponseEntity.ok(statusService.getStatus());
+			return ResponseEntity.ok(statsService.getStatus());
 		} catch (Exception e) {
 			return ResponseEntity
 					.status(HttpStatus.INTERNAL_SERVER_ERROR)

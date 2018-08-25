@@ -1,4 +1,4 @@
-package com.irmandade.mutants.controllers.services;
+package com.irmandade.mutants.services;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;

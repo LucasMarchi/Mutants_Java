@@ -1,4 +1,4 @@
-package com.irmandade.mutants.controllers.services;
+package com.irmandade.mutants.services;
 
 import static org.junit.Assert.assertEquals;
 
@@ -92,6 +92,12 @@ public class MutationServiceTest {
 						};
 		boolean retornado = mutationService.isMutant(dna);
 		assertEquals(esperado, retornado);
+	}
+	
+	@Test(expected = ArrayIndexOutOfBoundsException.class)
+	public void deveRetornarExceptionQuandoDnaNaoObedecerNxN() {
+		String[] dna = {"GCCCAT"};
+		mutationService.isMutant(dna);
 	}
 	
 }

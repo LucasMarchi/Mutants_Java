@@ -42,9 +42,17 @@ public class MutantControllerTest {
     @Test
     public void deveRetornarHttpStatusBadRequest() throws Exception {
     	String dna = "[ \"AAAA\", \"AAAA\" ]";
-        when(mutationService.isMutant(any())).thenReturn(true);
+        when(mutationService.isMutant(any())).thenThrow(ArrayIndexOutOfBoundsException.class);
         this.mockMvc.perform(post("/mutants").contentType(
                 MediaType.APPLICATION_JSON).content(dna)).andExpect(status().isBadRequest());
+    }
+    
+    @Test
+    public void deveRetornarHttpStatusInternalServerError() throws Exception {
+    	String dna = "[ \"AAAA\", \"AAAA\" ]";
+        when(mutationService.isMutant(any())).thenThrow(RuntimeException.class);
+        this.mockMvc.perform(post("/mutants").contentType(
+                MediaType.APPLICATION_JSON).content(dna)).andExpect(status().isInternalServerError());
     }
 
 }
