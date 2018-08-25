@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/LucasMarchi/Mutants_Java.svg?branch=master)](https://travis-ci.org/LucasMarchi/Mutants_Java) [![codecov](https://codecov.io/gh/LucasMarchi/Mutants_Java/branch/master/graph/badge.svg)](https://codecov.io/gh/LucasMarchi/Mutants_Java) 
+
 # Mutants Detector
 
 Mutants Detector é uma API desenvolvida pela irmandade com a finalidade de eliminar de uma vez por todas os X-MEN.
