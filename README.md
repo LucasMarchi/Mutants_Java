@@ -12,7 +12,7 @@ POST https://irmandade.herokuapp.com/mutants
 
 ## /stats
 GET https://irmandade.herokuapp.com/stats
->Revela da quantidade de DNA´s humanos testados em quantos ocorram mutação.
+>Revela da quantidade de DNA´s humanos testados em quantos ocorreram mutação.
  
  
  
